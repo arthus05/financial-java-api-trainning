@@ -10,7 +10,6 @@ import lombok.*;
 @NoArgsConstructor
 @Getter
 @Setter
-@Data
 public class Transaction {
 
     private Long id;
@@ -20,7 +19,7 @@ public class Transaction {
     private BigDecimal amount;
     private TransactionTypeEnum type;
 
-    public Transaction(TransactionTypeEnum type){
+    public Transaction(TransactionTypeEnum type) {
         this.type = type;
     }
 

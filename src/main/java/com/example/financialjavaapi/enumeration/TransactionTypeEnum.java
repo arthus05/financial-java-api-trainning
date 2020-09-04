@@ -1,12 +1,13 @@
 package com.example.financialjavaapi.enumeration;
 
+// Enum that classifies the transaction's payment type.
 public enum TransactionTypeEnum {
 
     CARD("CARD"), MONEY("MONEY");
 
-    private String value;
+    private final String value;
 
-    private TransactionTypeEnum(String value) {
+    TransactionTypeEnum(String value) {
         this.value = value;
     }
 
